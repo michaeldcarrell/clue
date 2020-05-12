@@ -40,7 +40,6 @@ let initObjects = function() {
     for (let type = 0; type < Object.size(items); type++){
         let currentType = Object.keys(items)[type];
         let container = document.getElementById(currentType + '-container');
-        console.log(currentType + '-container')
         for (let item = 0; item < items[currentType].length; item++) {
             let row = document.createElement('div');
             row.classList.add('row');
