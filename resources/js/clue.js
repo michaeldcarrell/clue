@@ -49,16 +49,17 @@ let initObjects = function() {
             btn.classList.add('btn', 'btn-secondary');
             btn.type = 'button';
             btn.setAttribute('data-current', '');
+            btn.innerText = items[currentType][item];
             row.appendChild(btn);
 
-            let dash = document.createElement('h5');
-            dash.classList.add('dash');
-            dash.innerText = '-';
-            row.appendChild(dash);
+            // let dash = document.createElement('p');
+            // dash.classList.add('dash');
+            // dash.innerText = '-';
+            // row.appendChild(dash);
 
-            let itemName = document.createElement('h5');
-            itemName.innerText = items[currentType][item];
-            row.appendChild(itemName);
+            // let itemName = document.createElement('p');
+            // itemName.innerText = items[currentType][item];
+            // row.appendChild(itemName);
 
             container.appendChild(row);
         }
